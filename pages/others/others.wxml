@@ -1,0 +1,2 @@
+<!--pages/others/others.wxml-->
+<web-view src='https://baidu.com/'></web-view>

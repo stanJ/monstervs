@@ -1,0 +1,16 @@
+{
+  "pages":[
+    "pages/coupon/coupon",
+    "pages/test/test",
+    "pages/bind/bindphone",
+    "pages/index/index",
+    "pages/others/others",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#61c1bc",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  }
+}

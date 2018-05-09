@@ -1,0 +1,65 @@
+.weui-navbar__slider {
+  width: 4em;
+}
+.tab1-content {
+  position: fixed;
+  top: 51px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f8f8f8;
+}
+.tab1-desc {
+  margin: 125px auto 30px;
+  width: 235px;
+  text-align: center;
+  font-size: 13px;
+}
+.tab1-btn-wrapper {
+  width: 160px;
+  margin: 0 auto;
+}
+.weui-btn {
+  font-size: 16px;
+} 
+.btn-use {
+  font-size: 16px;
+  line-height: 2.2;
+}
+.form {
+  margin-top: 20px;
+  padding: 0 25px; 
+}
+.form-item {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+.icon {
+  width: 16px;
+  height: 22px;
+  background-color: red;
+  margin-right: 15px;
+}
+.form-item .icon {
+  flex: 0 0 16px;
+}
+.form-item .input {
+  flex: 1;
+}
+.input {
+  height:2rem;
+  line-height:2rem;
+  border-bottom: 1px solid #d8d8d8;
+}
+.btn-pass[size=mini] {
+  margin-top: 0;
+  font-size: 12px;
+  line-height: 2.5;
+  margin-left: 4px;
+  align-self: flex-end;
+}
+.bind-btn-wrapper {
+  padding: 0 30px;
+  margin-top: 40px;
+}

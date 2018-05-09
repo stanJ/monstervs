@@ -1,0 +1,62 @@
+<view class="page">
+  <view class="weui-tab">
+    <view class='weui-navbar'>
+      <block wx:for="{{tabs}}" wx:key="*this">
+        <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+            <view class="weui-navbar__title">{{item}}</view>
+        </view>
+      </block>
+      <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+    </view>
+    <view class="weui-tab__panel">
+      <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+        <view class='tab1-content'>
+        <!--光凭感觉感受不到scroll-view和普通页面滚动的区别  -->
+        <scroll-view style='height: 100%;' scroll-y>
+          <view class='list'>
+            <view class='list__item' wx:for="{{coupon}}" wx:key="id">
+              <view class='item__left'>
+                <view class='coupon-detail'>
+                  <view class='coupon__logo'></view>
+                  <view class='coupon__content'>
+                    <view class='coupon__name'>印尼进口丽芝士</view>
+                    <view class='coupon__desc'>纳宝帝奶酪威化</view>
+                    <view class='coupon__price'>满45减10</view>
+                  </view>
+                </view>
+                <view class='coupon-time'>有效期：2018年4月9日 — 2018年6月30日</view>
+              </view>
+              <view class='item__right'>
+                <text>未领取</text>
+              </view>
+            </view>
+          </view>
+        </scroll-view>
+          
+        </view>
+      </view>
+      <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+        <view class='tab2-content'>
+          <view class='list'>
+            <view class='list__item' wx:for="{{coupon}}" wx:key="id">
+              <view class='item__left'>
+                <view class='coupon-detail'>
+                  <view class='coupon__logo'></view>
+                  <view class='coupon__content'>
+                    <view class='coupon__name'>哈根达斯</view>
+                    <view class='coupon__desc'>哈根达斯冰淇淋火锅</view>
+                    <view class='coupon__price'>满298减30</view>
+                  </view>
+                </view>
+                <view class='coupon-time'>有效期：2018年4月9日 — 2018年6月30日</view>
+              </view>
+              <view class='item__right'>
+                <text>已领取</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

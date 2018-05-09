@@ -1,0 +1,29 @@
+/**app.wxss**/
+@import "style/weui.wxss";
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+.weui-navbar {
+  box-shadow: 0rpx 2rpx 10rpx 3rpx #ccc;
+}
+.weui-navbar__item.weui-bar__item_on {
+  color: #61c1bc;
+}
+.weui-navbar__slider {
+  background-color: #61c1bc;
+}
+ /* .weui-btn[type=primary][plain] {
+  border-color: #61c1bc;
+  color: #61c1bc;
+}  */
+
+
+.page {
+  font-size: 16px;
+}
